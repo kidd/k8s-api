@@ -1,0 +1,4 @@
+{:deps {com.github.oliyh/martian         {:mvn/version "0.1.22"}
+        com.github.oliyh/martian-httpkit {:mvn/version "0.1.22"}
+        io.forward/yaml                  {:mvn/version "1.0.9"}
+        less-awful-ssl/less-awful-ssl    {:mvn/version "1.0.6"}}}
