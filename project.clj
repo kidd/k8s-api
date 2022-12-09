@@ -8,8 +8,8 @@
             [lein-nsorg "0.2.0"]]
   :cljfmt {:indents {providing [[:inner 0]]}}
   :dependencies [[org.clojure/clojure "1.10.0"]
-                 [martian "0.1.12-20191222.142233-2"]
-                 [martian-httpkit "0.1.11"]
+                 [com.github.oliyh/martian "0.1.22"]
+                 [com.github.oliyh/martian-httpkit "0.1.22"]
                  [io.forward/yaml "1.0.9"]
                  [less-awful-ssl "1.0.4"]]
   :main ^:skip-aot kubernetes-api.core
