@@ -1,6 +1,3 @@
-(ns kubernetes-api.apply
-  (:require [kubernetes-api.core :as k8s]
-            [yaml.core :as yaml]))
+(ns kubernetes-api.apply)
 
-(defn apply-file [client filepath])
-
+#_(defn apply-file [client filepath])

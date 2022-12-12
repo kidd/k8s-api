@@ -118,4 +118,3 @@
                                                    :action (handler-action handler)})]
     (and (= (handler-version handler) (version-of k8s preffered-route))
          (= (handler-group handler) (group-of k8s preffered-route)))))
-

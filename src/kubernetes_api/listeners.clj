@@ -1,9 +1,8 @@
 (ns kubernetes-api.listeners
   (:refer-clojure :exclude [delay])
-  (:require [kubernetes-api.core :as k8s-api]
-            [martian.core :as martian])
-  (:import (java.util UUID)
-           (java.util.concurrent Executors TimeUnit)))
+  (:require [kubernetes-api.core :as k8s-api])
+  (:import [java.util.concurrent Executors TimeUnit]
+           java.util.UUID))
 
 (defn- new-executor [size] (Executors/newScheduledThreadPool size))
 
@@ -89,4 +88,3 @@
   [{:keys [state] :as context}
    id]
   (cancel-task (get-in @state [:listeners id :task])))
-
