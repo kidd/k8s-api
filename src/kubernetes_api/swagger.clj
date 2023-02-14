@@ -97,10 +97,10 @@
     (keyword s)))
 
 (defn read []
-  (customized (-> (io/resource "kubernetes_api/swagger.json")
-                  io/input-stream
-                  slurp
-                  (json/parse-string keyword-except-paths))))
+  (customized (some-> (io/resource "kubernetes_api/swagger.json")
+                      io/input-stream
+                      slurp
+                      (json/parse-string keyword-except-paths))))
 
 (defn from-api* [api-root opts]
   (json/parse-string
